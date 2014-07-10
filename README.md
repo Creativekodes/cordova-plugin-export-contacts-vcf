@@ -1,4 +1,4 @@
-export-vcf-cordova-phonegap
+export-contacts-vcf-cordova-phonegap
 ===========================
 By Neeraj Tuteja
 
