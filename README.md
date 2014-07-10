@@ -2,14 +2,14 @@ export-vcf-cordova-phonegap
 ===========================
 By Neeraj Tuteja
 
-##Description##
+##Description
 Export all contacts (device, Google, Facebook etc) to a file and use its path for further processing
 
-##Devices tested## 
+##Devices tested
 
 This plugin was successfully tested with Phonegap 2.9 and Android 4.1.2. 
 
-## Adding this plugin to your project ## 
+## Adding this plugin to your project
 
 0. (Make sure you are using Phonegap > 2.0) 
 1. Move ExportVCFsToFile.js to your project's www folder and include a reference to it in your html files. 
