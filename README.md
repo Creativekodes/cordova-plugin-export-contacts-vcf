@@ -1,19 +1,17 @@
-export-contacts-vcf-cordova-phonegap
+cordova-plugin-exportContactsVCF
 ===========================
 By Neeraj Tuteja
+Updated by Vasiliy Mikhaylovsky
 
 ##Description
 Export all contacts (device, Google, Facebook etc) to a file and use its path for further processing
 
-##Devices tested
+## Installation
 
-This plugin was successfully tested with Phonegap 2.9 and Android 4.1.2. 
+This requires cordova 5.0+ ( current stable v1.0.0 )
 
-## Adding this plugin to your project
+    cordova plugin add cordova-plugin-export-contacts-vcf
 
-0. (Make sure you are using Phonegap > 2.0) 
-1. Move ExportVCFsToFile.js to your project's www folder and include a reference to it in your html files. 
-2. Add the java files from src to your project's src hierarchy 
-3. Reference the plugin in your res/config.xml file ```<plugin name="ExportVCFsToFilePlugin" value="org.apache.cordova.plugin.ExportVCFsToFilePlugin"/>``` 
-4. Ensure that your manifest contains the necessary permissions to send SMS messages: ```<uses-permission android:name="android.permission.READ_CONTACTS" />``` 
+It is also possible to install via repo url directly ( unstable )
 
+    cordova plugin add https://github.com/Ti-webdev/cordova-plugin-export-contacts-vcf.git

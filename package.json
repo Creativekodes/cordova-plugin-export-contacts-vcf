@@ -1,0 +1,27 @@
+{
+  "name": "cordova-plugin-export-contacts-vcf",
+  "version": "1.0.0",
+  "description": "Export all contacts (device, Google, Facebook etc) to a file and use its path for further processing",
+  "cordova": {
+    "id": "cordova-plugin-export-contacts-vcf",
+    "platforms": [
+      "android"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ti-webdev/cordova-plugin-export-contacts-vcf.git"
+  },
+  "keywords": [
+    "cordova",
+    "android",
+    "vcard",
+    "contacts"
+  ],
+  "author": "Vasiliy Mikhaylovsky",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Ti-webdev/cordova-plugin-export-contacts-vcf/issues"
+  },
+  "homepage": "https://github.com/Ti-webdev/cordova-plugin-export-contacts-vcf#readme"
+}
