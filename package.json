@@ -1,6 +1,6 @@
 {
   "name": "cordova-plugin-export-contacts-vcf",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Export all contacts (device, Google, Facebook etc) to a file and use its path for further processing",
   "cordova": {
     "id": "cordova-plugin-export-contacts-vcf",

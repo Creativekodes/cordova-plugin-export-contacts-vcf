@@ -2,7 +2,7 @@
 
 <plugin xmlns="http://cordova.apache.org/ns/plugins/1.0"
 		   id="cordova-plugin-export-contacts-vcf"
-	  version="1.0.2">
+	  version="1.0.3">
 
 	<name>exportContactsVCF</name>
 
@@ -20,7 +20,7 @@
 	<platform name="android">
 		<config-file target="res/xml/config.xml" parent="/*">
 			<feature name="cordova.plugins.exportContactsVCF">
-				<param name="android-package" value="cordova.plugins.exportContactsVCF"/>
+				<param name="android-package" value="org.apache.cordova.plugin.exportContactsVCF"/>
 			</feature>
 		</config-file>
 
