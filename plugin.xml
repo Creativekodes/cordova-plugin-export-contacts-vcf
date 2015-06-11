@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<plugin xmlns="http://cordova.apache.org/ns/plugins/1.0"
+           id="cordova-plugin-exportContactsVCF"
+      version="0.1.3">
+
+    <name>exportContactsVCF</name>
+
+	<description>
+    Export all contacts (device, Google, Facebook etc) to a file and use its path for further processing
+	</description>
+	<license>MIT</license>
+	<keywords>cordova,android,vcard,contacts</keywords>
+
+	<js-module src="www/exportContactsVCF.js" name="exportContactsVCF">
+    <clobbers target="window.plugins.exportContactsVCF"/>
+	</js-module>
+
+	<!-- android -->
+    <platform name="android">
+        <config-file target="res/xml/config.xml" parent="/*">
+            <feature name="cordova.plugins.exportContactsVCF">
+                <param name="android-package" value="cordova.plugins.exportContactsVCF"/>
+            </feature>
+        </config-file>
+
+        <config-file target="AndroidManifest.xml" parent="/*">
+            <uses-permission android:name="android.permission.READ_CONTACTS" />
+        </config-file>
+
+        <source-file src="src/android/ExportVCFsToFilePlugin.java" target-dir="src/org/apache/cordova/exportContactsVCF" />
+    </platform>
+</plugin>

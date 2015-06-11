@@ -24,19 +24,9 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 */
 
-var ExportVCFsToFile = {
-	fileName: "exportedContactsInVCF",
-	fileExtension: "vcf",	
-	export: function ()
-	{ 
-		cordova.exec(this.onSuccess, this.onFail, "ExportVCFsToFile", "nativeAction", [this.fileName, this.fileExtension]);
-  	},
-	onSuccess:function(filePath)
-	{ 
-		alert("Filepath of exported VCF is " + filePath);
-	} ,
-	onFail: function  (error)
-	{ 
-		alert("ERROR: " + error); 
-	}
-} ;
+
+var exec = require('cordova/exec')
+
+module.exports = function (onSuccess, onFail, fileName, fileExtension) {
+  exec(onSuccess, onFail, "ExportVCFsToFile", "nativeAction", [fileName || 'exportedContactsInVCF', fileExtension || 'vcf'])
+}
